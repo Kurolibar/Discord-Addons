@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
-
 /* Summaries*/
 [class*=topicsPillContainer_], [class*=topicsPillCaret_], [class*=newTopicsBarContainer_] {
 	background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)) !important;

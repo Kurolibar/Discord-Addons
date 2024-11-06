@@ -113,13 +113,13 @@
 
     /* placeholder texts/values */
     /* input fields */
-    --chillax-input-field: "Life is so much easier when you just take a moment to chill";
+    --chillax-input-field: "[ insert text here ]";
     /* input fields  when the channel is locked*/
-    --chillax-input-field-locked: "Life is so much easier when you just take a moment to chill";
+    --chillax-input-field-locked: "[ locked ]";
     /* typing indicator: when a single person is typing */
-    --chillax-input-typing-indicator-one-person: "is smashing some buttons";
+    --chillax-input-typing-indicator-one-person: "";
     /* typing indicator: when more than one person is typing */
-    --chillax-input-typing-indicator-many-person: "are smashing some buttons";
+    --chillax-input-typing-indicator-many-person: "";
 
     /* scroller (by default transparent) */
     --chillax-scroller-color: transparent; /* change `transparent` to some other hex color to make it visible */

@@ -8,11 +8,11 @@
 
 
 
-/* @import url("https://github.com/Kurolibar/Discord-Addons/blob/main/Snippets/Navigation%20Bar%20Reduction.css"); */
-@import url("https://github.com/Kurolibar/Discord-Addons/blob/main/Snippets/Sidebar.css");
-@import url("https://github.com/Kurolibar/Discord-Addons/blob/main/Snippets/Spotify.css");
-@import url("https://github.com/Kurolibar/Discord-Addons/blob/main/Snippets/Text.css");
-@import url("https://github.com/Kurolibar/Discord-Addons/blob/main/Snippets/UI.css");
+/* @import url("https://kurolibar.github.io/Discord-Addons/Snippets/Navigation%20Bar%20Reduction.css"); */
+@import url("https://kurolibar.github.io/Discord-Addons/Snippets/Sidebar.css");
+@import url("https://kurolibar.github.io/Discord-Addons/Snippets/Spotify.css");
+@import url("https://kurolibar.github.io/Discord-Addons/Snippets/Text.css");
+@import url("https://kurolibar.github.io/Discord-Addons/Snippets/UI.css");
 
 html {
 	cursor: crosshair !important;
