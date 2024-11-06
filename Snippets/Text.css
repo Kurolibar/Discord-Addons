@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+
+/* Font */
+[class*=containerDefault_], [class*=content_], [class*=messagesWrapper_], [class*=text] {
+	font-family: 'MS Gothic' !important;
+	/* font-weight: 400 !important;
+	/* change the font name if you need to, make sure that you import includes the required weights */
+}
+/* Readable Users */
+[class*=username_][style],.mention[style],[class*=membersGroup_] [style]{
+	filter:contrast(.2) brightness(1.2) saturate(300%);
+}
+
+[class*=subtitleContainer_] [class*=input_] {
+	font-family: 'Nanum Gothic Coding' !important;
+	font-weight: inherit !important;
+}
+@font-face{
+	font-family: "Twemoji Mozilla";
+	src: url("https://vendicated.github.io/random-files/Twemoji.Mozilla.ttf") format("truetype");
+	unicode-range: U+1F1E6-1F1FF;
+}
+@font-face{
+	font-family: "dashless";
+	size-adjust: 110%;
+	/*adjust this to change word spacing*/
+	src: url("https://vendicated.github.io/random-files/Dashless.woff2") format("woff2");
+	unicode-range: U+002D;
+}
+[data-list-item-id^=channels___]:not([role=button]), /* channel list */
+[class^=titleWrapper] > h1, /* top bar with topic */
+[class^=titleWrapper] > h2, /* top bar in thread view */
+[id^=":r"] > h1, /* topic popup */
+[class^=resultChannel], [class^=channelNameContainer_], [class^=searchAnswer_], /* search */
+[class^=autocompleteRowContent_] [class*=autocompleteRowHeading_], /* chat autocomplete */
+.channelWithIcon, /* channel mentions in chat */
+[class^=emptyChannelIcon_] + h3, /* start of new channel */
+[class^=emptyChannelIcon_] ~ [class*=description_],[class^=browser_] [class*=channelText_], /* channel browser*/
+[class^=returnButton_] [class^=text-], /*return button in channel browser*/
+[class^=placeholder][class*=slateTextArea], /* chat input placeholder text */
+[class^=auditLog_] [class^=overflowEllipsis_] strong, /* audit log */
+.vc-permviewer-perms-title, /* permissionsviewer */
+[class^=headerChannelContainer_] > div, /* invite to channel dialog */
+[class^=uploadDropModal_] strong, /* file drag upload */
+[class^=channelNameSpan_], /* inbox */
+[class^=quickswitcher_] [class^=name_] /* ctrl+k */
+{
+	font-family: "Twemoji Mozilla", "dashless", "MS Gothic";
+}
+[class^=emptyChannelIcon_] ~ [class*=description_] > *{
+	font-family: "MS Gothic";
+}
+
+/* Bot Icons */
+[class*=botTag_]:not([class*="botTagOP"]
+,[class*="botTagRemix"]
+,[class*="botTagAI"]
+,[class*="systemTag"]
+){
+	content: url("data:image/svg+xml,%3Csvg height='20' width='20' viewBox='0 0 690 512' xmlns='http://www.w3.org/2000/svg' fill='%23ffffff'%3E%3Cpath d='m32 224h32v192h-32a31.96166 31.96166 0 0 1 -32-32v-128a31.96166 31.96166 0 0 1 32-32zm512-48v272a64.06328 64.06328 0 0 1 -64 64h-320a64.06328 64.06328 0 0 1 -64-64v-272a79.974 79.974 0 0 1 80-80h112v-64a32 32 0 0 1 64 0v64h112a79.974 79.974 0 0 1 80 80zm-280 80a40 40 0 1 0 -40 40 39.997 39.997 0 0 0 40-40zm-8 128h-64v32h64zm96 0h-64v32h64zm104-128a40 40 0 1 0 -40 40 39.997 39.997 0 0 0 40-40zm-8 128h-64v32h64zm192-128v128a31.96166 31.96166 0 0 1 -32 32h-32v-192h32a31.96166 31.96166 0 0 1 32 32z'/%3E%3C/svg%3E%0A");
+}
+
