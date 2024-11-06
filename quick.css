@@ -1,0 +1,684 @@
+html {
+	cursor: crosshair !important;
+}
+
+/* Font */
+[class*=containerDefault_], [class*=content_], [class*=messagesWrapper_], [class*=text] {
+	font-family: 'MS Gothic' !important;
+	/* font-weight: 400 !important;
+	/* change the font name if you need to, make sure that you import includes the required weights */
+}
+/* Readable Users */
+[class*=username_][style],.mention[style],[class*=membersGroup_] [style]{
+	filter:contrast(.2) brightness(1.2) saturate(300%);
+}
+
+[class*=subtitleContainer_] [class*=input_] {
+	font-family: 'Nanum Gothic Coding' !important;
+	font-weight: inherit !important;
+}
+@font-face{
+	font-family: "Twemoji Mozilla";
+	src: url("https://vendicated.github.io/random-files/Twemoji.Mozilla.ttf") format("truetype");
+	unicode-range: U+1F1E6-1F1FF;
+}
+@font-face{
+	font-family: "dashless";
+	size-adjust: 110%;
+	/*adjust this to change word spacing*/
+	src: url("https://vendicated.github.io/random-files/Dashless.woff2") format("woff2");
+	unicode-range: U+002D;
+}
+[data-list-item-id^=channels___]:not([role=button]), /* channel list */
+[class^=titleWrapper] > h1, /* top bar with topic */
+[class^=titleWrapper] > h2, /* top bar in thread view */
+[id^=":r"] > h1, /* topic popup */
+[class^=resultChannel], [class^=channelNameContainer_], [class^=searchAnswer_], /* search */
+[class^=autocompleteRowContent_] [class*=autocompleteRowHeading_], /* chat autocomplete */
+.channelWithIcon, /* channel mentions in chat */
+[class^=emptyChannelIcon_] + h3, /* start of new channel */
+[class^=emptyChannelIcon_] ~ [class*=description_],[class^=browser_] [class*=channelText_], /* channel browser*/
+[class^=returnButton_] [class^=text-], /*return button in channel browser*/
+[class^=placeholder][class*=slateTextArea], /* chat input placeholder text */
+[class^=auditLog_] [class^=overflowEllipsis_] strong, /* audit log */
+.vc-permviewer-perms-title, /* permissionsviewer */
+[class^=headerChannelContainer_] > div, /* invite to channel dialog */
+[class^=uploadDropModal_] strong, /* file drag upload */
+[class^=channelNameSpan_], /* inbox */
+[class^=quickswitcher_] [class^=name_] /* ctrl+k */
+{
+	font-family: "Twemoji Mozilla", "dashless", "MS Gothic";
+}
+[class^=emptyChannelIcon_] ~ [class*=description_] > *{
+	font-family: "MS Gothic";
+}
+
+/* Bot Icons */
+[class*=botTag_]:not([class*="botTagOP"]
+,[class*="botTagRemix"]
+,[class*="botTagAI"]
+,[class*="systemTag"]
+){
+	content: url("data:image/svg+xml,%3Csvg height='20' width='20' viewBox='0 0 690 512' xmlns='http://www.w3.org/2000/svg' fill='%23ffffff'%3E%3Cpath d='m32 224h32v192h-32a31.96166 31.96166 0 0 1 -32-32v-128a31.96166 31.96166 0 0 1 32-32zm512-48v272a64.06328 64.06328 0 0 1 -64 64h-320a64.06328 64.06328 0 0 1 -64-64v-272a79.974 79.974 0 0 1 80-80h112v-64a32 32 0 0 1 64 0v64h112a79.974 79.974 0 0 1 80 80zm-280 80a40 40 0 1 0 -40 40 39.997 39.997 0 0 0 40-40zm-8 128h-64v32h64zm96 0h-64v32h64zm104-128a40 40 0 1 0 -40 40 39.997 39.997 0 0 0 40-40zm-8 128h-64v32h64zm192-128v128a31.96166 31.96166 0 0 1 -32 32h-32v-192h32a31.96166 31.96166 0 0 1 32 32z'/%3E%3C/svg%3E%0A");
+}
+
+/* Remove the phone indicator beside avatar */
+.subtitleContainer_a7d72e:has(foreignObject[mask="url(#svg-mask-avatar-status-mobile-24)"]) [class*=avatar__] {
+	width: 75% !important;
+}
+root {
+	--rs-phone-visible: none;
+}
+foreignObject[mask="url(#svg-mask-avatar-status-mobile-32)"]::after {
+	visibility: hidden !important;
+}
+#app-mount [class*=wrapper_] foreignObject[mask*=mobile]:after {
+	display: none;
+}
+#app-mount [class*=wrapper_] foreignObject[mask*=mobile][width="80"]:after {
+	display: none;
+}
+/* Gets rid of avatar decoration for you and everyone else in Memberlist */
+[class*=members_] [classavatarDecoration_] {
+	display: none !important;
+}
+
+/*Spotify*/
+#vc-spotify-title {
+	font-size: 10px;
+	margin-left: 2px;
+}
+/*#vc-spotify-song-title::before,#vc-spotify-song-title + div::before,#vc-spotify-song-title + div + div::before {
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-size: contain;
+	padding: 7px;
+	margin-left: -17px;
+	margin-top: 2px;
+	content: '';
+	background-color: var(--header-primary);
+	/* Spotify wave thingy fix */
+	/*background-color: hsla(var(--spotify-vencord-text)/1);
+	position: absolute;
+}*/
+#vc-spotify-song-title,#vc-spotify-song-title + div,#vc-spotify-song-title + div + div{
+	font-family: 'MS Gothic';
+}
+#vc-spotify-song-title::before {
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-music-4'%3E%3Cpath d='M9 18V5l12-2v13'%3E%3C/path%3E%3Cpath d='m9 9 12-2'%3E%3C/path%3E%3Ccircle cx='6' cy='18' r='3'%3E%3C/circle%3E%3Ccircle cx='18' cy='16' r='3'%3E%3C/circle%3E%3C/svg%3E");
+}
+#vc-spotify-song-title + div::before {
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-mic'%3E%3Cpath d='M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z'%3E%3C/path%3E%3Cpath d='M19 10v2a7 7 0 0 1-14 0v-2'%3E%3C/path%3E%3Cline x1='12' x2='12' y1='19' y2='22'%3E%3C/line%3E%3C/svg%3E");
+}
+#vc-spotify-song-title + div + div::before {
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-disc-2'%3E%3Ccircle cx='12' cy='12' r='4'%3E%3C/circle%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='12' x2='12' y2='12.01'%3E%3C/line%3E%3C/svg%3E");
+}
+#vc-spotify-player {
+	--blur-amount: 2px;
+	/* higher px = stronger blur, 0 = no blur */
+	--darken-percent: 0.7;
+	/* 0 = album cover is not darkened, 1 = album cover is darkened fully (black) */
+	--track-image: var(--vc-spotify-track-image) !important;
+	background: transparent !important;
+	position: relative;
+}
+#vc-spotify-player > * {
+	position: relative;
+	z-index: 1;
+}
+#vc-spotify-player::after {
+	content: "";
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: linear-gradient(rgba(0, 0, 0, var(--darken-percent)), rgba(0, 0, 0, var(--darken-percent))), var(--track-image);
+	background-size: cover;
+	background-blend-mode: multiply;
+	filter: opacity(0.5) /*blur(var(--blur-amount))*/
+	;
+	clip-path: inset(0);
+}
+#vc-spotify-player + [class^="container"] {
+	background: transparent;
+}
+#vc-spotify-album-image{
+	/*display: flex;
+	max-height: 50px;*/
+	opacity: 0;
+	transition: .25s .05s;
+}
+#vc-spotify-album-image:hover{
+	opacity: 0;
+}
+#vc-spotify-progress-bar>[class^=slider] [class^=grabber] {
+	background-image: url("https://fauux.neocities.org/wiredLogInNew_512px_06.gif");
+	transform: rotate(0deg);
+	margin-left: -15px;
+}
+
+/* Summaries*/
+[class*=topicsPillContainer_], [class*=topicsPillCaret_], [class*=newTopicsBarContainer_] {
+	background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)) !important;
+	backdrop-filter: blur(1px);
+	border: 1px !important;
+}
+[class*=barButtonBase_] {
+	align-items: right;
+	width: max-content;
+	margin-left: auto;
+}
+[class*=barButtonBase_] [class*=newTopicsBarCompact_] {
+	font-size: 0;
+}
+[class*=barButtonBase_] [class*=newTopicsBarCompact_]::after {
+	font-size: initial;
+	content: " R E A D ";
+}
+
+
+/* Search Bar text */
+[class*=searchBarComponent_]{
+	visibility: hidden;
+}
+[class*=searchBarComponent_]::before {
+	content: "[ n a v i g a t e ]" !important;
+	visibility: visible;
+}
+[class*=quickswitcher_] [class*=input_]::placeholder {
+	visibility: hidden;
+	text-align: center;
+}
+[class*=searchBar_] [class*=input_]::placeholder {
+	visibility: hidden;
+}
+/* Friends */
+[class*=children_] [class*=titleWrapper_] {
+	display: none;
+}
+/* Help Icon */
+[class*=upperContainer_] [class*=anchor_] {
+	display: none;
+}
+/* Nitro Tab */
+[class*=channel_] [class*=link_][href="/store"] {
+	display: none;
+}
+
+/* Hide Nitro gift button */
+@import url('https://d3sox.github.io/complementary-discord-theme/hide-nitro-upselling.theme.css');
+button[aria-label="Send a gift"] {
+	display: none;
+}
+/* Hide sticker picker button */
+button[aria-label="Open sticker picker"] {
+	display: none;
+}
+/* Hide super reaction button */
+div[aria-label="Add Super Reaction"] {
+	display: none;
+}
+/* Hide super reaction tab in emoji picker */
+button[id="super-reaction-picker-tab"] {
+	display: none;
+}
+/* Chat box Text */
+[class*=inner_] [class*=placeholder_]::before {
+	content: "[ insert text here ]" !important;
+}
+/* Chat box Text in Restricted */
+[class*=innerDisabled_] [class*=placeholder_]::before {
+	content: "[ locked ]" !important;
+}
+/*Disabled Message Box in restricted*/
+[class*=channelTextAreaDisabled] {
+	display: none!important;
+}
+/* or if it doesn't work like because of themes: */
+[class*=channelTextAreaDisabled] {
+	opacity: 0!important;
+	position: absolute!important;
+	height: 0px!important;
+	width: 0px!important;
+	z-index: 0!important;
+}
+/*Typing*/
+[class*=typing_] strong:last-child::after {
+	content: '';
+}
+[class*=typing_] strong:nth-last-child()::after {
+	content: '';
+}
+/*Change Slash Command Menu & Emote background color*/
+.theme-dark [class*=autocomplete_], [class*=autocomplete_] [class*=categoryHeader_], [class*=navButton_], [class*=inspector_]  {
+	background: transparent !important;
+	backdrop-filter: blur(20px);
+}
+/* Slash Command cleaner */
+.appLauncherOnboardingCommandName_ec86aa .clickable_ec86aa {
+	background: 0 0;
+	padding-left: 0;
+}
+.executedCommand_ec86aa .appLauncherOnboardingCommandName_ec86aa:hover {
+	background: 0 0;
+}
+
+/* No, I don't want to make a thread from a chain of more than 2 replies */
+[class*="threadSuggestionBar_"] {
+	display:none;
+}
+/* not circle */
+[class^="avatar_"] {
+	border-radius: 25%;
+}
+/* Alligned Chat */
+:is(main,section)[class^=chatContent] > form,form > div[class^=submitContainer] {
+	/* align chatbox */
+	padding: 0px;
+	> div {
+		margin-bottom: 0px;
+		border-radius: 0px;
+	}
+	> div[class^=channelTextArea] {
+		> div {
+			margin: 0px;
+		}
+		> div > div {
+			padding-top: 4px;
+			min-height: 49px;
+			border-radius: 0px;
+			background: transparent;
+		}
+	}
+	/* move slowmode/typing indicator to match */
+	> div[class^=typing] {
+		top: -24px;
+		right: calc(var(--custom-index-scrollbar-margin) * 2 + var(--custom-index-scrollbar-width));
+		margin-left: auto;
+		width: fit-content;
+		padding-left: 2px;
+		padding-right: 9px;
+		border-radius: 8px 8px 0px 0px;
+		background-color: transparent;
+	}
+	/* make scrollbar meet chatbox */
+	&::after {
+		display: none;
+	}
+	/* fix replies */
+	> div > div > div[class^=attachedBars] {
+		min-height: unset !important;
+		padding-bottom: 4px;
+	}
+}
+/* merge app launcher to be part of the chat bar */
+div[class^=channelTextArea_] > div[class^=scrollableContainer_] {
+    margin-right: -10px;
+    &:not(:has(> [class^=inner_][class*=innerDisabled_])) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+div[class^=channelAppLauncher_] {
+	--channeltextarea-background: transparent;
+    margin-left: 0;
+    min-width: 44px;
+    background: var(--bg-overlay-3, var(--channeltextarea-background));;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    [class^=buttonContainer_] {
+        top: 0;
+        position:absolute;
+    }
+}
+
+div[class*="buttonContainer_"] [class*="wrapper_"] {
+	background: #ffffff1e !important;
+}
+div[class*="buttonContainer_"] [class*="button_"]:hover {
+	background: #0000004f;
+	transition: 0.25s 0.075s;
+}
+
+/* "(edited)" text timestamps */
+span[class*="timestamp_"] time[aria-label*="Edited"]::after {
+    content: '✎'!important;
+    font-size: 0.725rem;
+    font-weight: 400;
+}
+/* message header timestamps */
+span[class*="timestampInline_"] time::after {
+  content: attr(aria-label);
+  font-size: 0.65rem;
+  font-weight: 400;
+}
+/* header-less multi-line hover timestamps */
+span[class*="timestampVisibleOnHover_"] time::after {
+  content: attr(aria-label);
+  position: absolute;
+  font-size: 0.6rem;
+  line-height: 0.85rem;
+  width: 65px;
+  left: -1px;
+  top: -2px;
+}
+/* hide the old timestamps */
+span[class*="timestampInline_"], span[class*="timestampVisibleOnHover_"] {
+  font-size: 0rem !important;
+}
+span[class*="edited_"] {
+    position: relative;
+    right: 95px;
+    color: transparent;
+}
+
+/* Polls */
+/* Badge icon */
+div[class^=pollBadgeDefault] svg path {
+	fill: #000 !important;
+}
+/* Badge text */
+div[class^="pollBadgeDefault"] div[class^="text"] {
+	color: #000 !important;
+}
+/* Background */
+div[class*="pollContainer"] {
+	background-color: #ffffff10 !important;
+}
+/* Answer bubble */
+div[class*="pollContainer"] div[class^="answer"] {
+	background-color: #000000;
+}
+/* Unread 
+[class*=unread_] {
+	background: transparent !important;
+	backdrop-filter: blur(90px);
+	min-height: 35px;
+}
+[class*=unread_] [class*=text_] {
+	font-size: 0;
+}
+[class*=unread_] [class*=text_]::before {
+	content: "[ u n r e a d ]";
+	display: inline-block;
+	font-size: var(--font-size) !important;
+}
+[class*=bar_] {
+	background: transparent !important;
+	backdrop-filter: blur(12px);
+}
+[class*=bar_] [class*=barText_] {
+	font-size: 0;
+}
+[class*=bar_] [class*=barText_]::before {
+	content: "[ u n r e a d ]";
+	visibility: visible !important;
+	display: inline;
+	font-size: var(--font-size) !important;
+}
+/* Sidebar */
+/* Floating User Panel*/
+[class*=sidebar_] [class*=panels_] [class*=container_] {
+	border-top-left-radius: 5px !important;
+	border-top-right-radius: 5px !important;
+	background: transparent !important;
+	color: transparent !important;
+}
+.theme-dark [class*=sidebar_] [class*=panels_] {
+	background: transparent !important;
+	backdrop-filter: blur(1px) grayscale(50%);
+}
+.theme-dark .container_adcaac,[class*=activityPanel_] {
+	background: linear-gradient(transparent, hsla(0, 0%, 0%, 0.5)) !important;
+}
+[class*=sidebar_] [class*=scrollerBase_] [class*=content_eed6a8]:not([aria-label*="Direct Messages"]) {
+	--side-image: url(https://fauux.neocities.org/doorBK.gif);
+	background-image: var(--side-image), linear-gradient(0deg, transparent 0%, black 0%), var(--side-image);
+	background-size: 90px, cover;
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: 100px;
+	opacity: .85;
+	transition: 0.1s 0.025s;
+	background-blend-mode: luminosity, multiply;
+}
+[class*=sidebar_] [class*=scrollerBase_] [class*=content_eed6a8]:hover {
+	opacity: 1;
+	image-rendering: optimizeQuality;
+	background-image: var(--side-image), linear-gradient(0deg, transparent 0%, black 0%), var(--side-image);
+	background-blend-mode: normal;
+}
+[class*=avatar_] {
+	filter: unset;
+}
+/* VC Hang Status */
+[class*=iconGroup]:has([class*=hangStatusIcon], [class*=gameIcon]) {
+	display: flex;
+	position: absolute;
+	right: 101%;
+}
+[class*=layerContainer] [class*=popout]:has([class*=text-xs-medium], [class*=options]){
+	display: flex;
+}
+
+/* Modified Profile Popup */
+[class*=userPopoutOuter_] {
+	/*--profile-gradient-primary-color: transparent !important;*/
+	--profile-gradient-secondary-color: transparent !important;
+	--profile-gradient-overlay-color: transparent !important;
+	--profile-avatar-border-color: hsla(112, 85.9%, 86.1%, 1);
+	--profile-body-background-color: hsla(0, 0%, 100%, 0.5) !important;
+	--profile-role-pill-background-color: rgba(255, 255, 255, 0.1) !important;
+	/*--text-normal: var(--text-normal);*/
+	/*--interactive-normal: var(--interactive-normal);*/
+	position: relative !important;
+  	backdrop-filter: blur(6px);
+}
+[class*=userPanelOuter_]::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	backdrop-filter: blur(5px);
+}
+[class*=profilePanel_] {
+	background: transparent !important;
+}
+[class*=userPanelOuter_] {
+	--profile-gradient-primary-color: none !important;
+	--profile-gradient-overlay-color: none !important;
+	backdrop-filter: blur(1px) !important;
+}
+[class*=activityBiteSizePopout_] {
+	background: rgba(255, 255, 255, 0.25) !important;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+/*[class*=activityBiteSizePopout_]::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: inherit;
+	border: 0px solid transparent;
+	box-sizing: border-box;
+	-webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+	-webkit-mask-composite: xor;
+	opacity: .51 !important;
+}
+*/
+[class*=userPopoutInner_] [class*=eyebrow_] {
+	display: none;
+}
+[class*=userProfileModalInner_] [class*=note_] {
+	visibility: visible !important;
+	opacity: 0%;
+	transition: opacity 0.25s;
+}
+[class*=note_]:hover {
+	opacity: 100%;
+}
+/* Match Status Bubble color with Profile Primary Color */
+[class*=statusBubble_] {
+  background-color: var(--profile-gradient-primary-color);
+}
+[class*=statusBubbleOuter_]:before {
+  background-color: var(--profile-gradient-primary-color);
+}
+[class*=statusBubbleOuter_]:after {
+  background-color: var(--profile-gradient-primary-color);
+}
+/*Role Colour*/
+/* Target the role elements and apply styles */
+[class*=role_] {
+  transform: translate(0);
+  border: 0;
+  border-radius: 5px !important;
+  --transparency: 0.4; /* You may want to adjust the transparency value */
+}
+/* Target the roleRemoveIcon and adjust its positioning */
+[class*=role_] [class*=roleRemoveIcon_] {
+  margin: 0;
+  left: unset;
+  transform: translate(1px,-5px) scale(450%);
+}
+
+[class*=role_] [class*=roleRemoveButton_] {
+  margin: 0.5;
+  left: unset;
+}
+/* Target the roleCircle element and apply additional styles */
+[class*=role_] [class*=roleCircle_]::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: inherit;
+	border: 1px solid transparent;
+	border-radius: 5px !important;
+	box-sizing: border-box;
+	z-index: -1 !important;
+	-webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+	/*-webkit-mask-composite: xor;
+	/*Border or whole bubble*/
+  opacity: var(--transparency) !important;
+}
+/* Unsimplfy Profile Roles */
+[class*=userPopoutInner_] > [class*=body_] [class^="descriptionClamp_"] {
+  -webkit-line-clamp: unset;
+  max-height: 112px;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+&&::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+&&::-webkit-scrollbar-track {
+  border: 2px solid var(--scrollbar-thin-track);
+  background-color: var(--scrollbar-thin-track);
+  border-color: var(--scrollbar-thin-track);
+}
+&&::-webkit-scrollbar-thumb {
+  background: var(--profile-body-divider-color);
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  min-height: 40px;
+}
+}
+[class*=viewFullBio_]{
+  visibility: hidden;
+}
+
+/* Fix the text being too blurry */
+[class*=userPopoutOuter_], [class*=roleNameOverflow_]/*, [class*=nickname_], [class*=userTagUsername_]*/ {
+  color: hsl(0, 0%, 95%);
+}
+
+/* Minimal Auth Apps */
+[class*=authedApp_]{
+	max-height:32px;
+	box-sizing:content-box;
+	overflow:hidden;
+	transition:max-height 1s;
+}
+[class*=authedApp_]:hover{
+	max-height:100vh
+}
+
+/*makes it so that when you hover over cropped text it rolls to reveal the full text*/
+[class*=header_a0]:hover [class*=headerText_a0] {
+	animation: scrollText 8s linear infinite;
+	width: 12rem;
+}
+@keyframes scrollText {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+/* jump to present */
+div[class^=jumpToPresentBar] {
+	left: 0;
+	right: unset;
+	border-radius: 0px 8px 0px 0px;
+	background-color: transparent;
+	> button[class^=barButtonMain] {
+		flex: 0 0 auto;
+		display: none;
+	}
+}
+
+/*     Modernized audio attachments      */
+[class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioMetadata"] {
+  margin-bottom: 24px;
+}
+[class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioControls"] {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 0px 0px 8px 8px;
+}
+
+/* Pending Apps */
+.container_aa1bff {
+    visibility: hidden;
+    height: 5px;
+}
+
+/* Remove the Create Invite button from Channel Lists */
+[class^="iconVisibility_"] [aria-label="Create Invite"] {
+    display: none !important;
+}
+[class^="iconVisibility_"] [class^="channelInfo_"] {
+    display: flex !important;
+}
+
+
+
+
+[class^="memberInner"]:has(div>div[aria-label*="Online"]) {
+    background: linear-gradient(to left, rgba(68, 105, 68, .25), transparent);
+}
+[class^="memberInner"]:has(div>div[aria-label*="Idle"]) {
+    background: linear-gradient(to left, rgba(135, 105, 75, .25), transparent);
+}
+[class^="memberInner"]:has(div>div[aria-label*="Do Not Disturb"]) {
+    background: linear-gradient(to left, rgba(130, 70, 70, .25), transparent);
+}
+[class^="memberInner"]:has(div>div[aria-label*="Streaming"]) {
+    background: linear-gradient(to left, rgba(63, 33, 88, .25) , transparent);
+}
