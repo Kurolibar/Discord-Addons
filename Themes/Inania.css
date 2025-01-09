@@ -14,7 +14,3 @@
 @import url("https://kurolibar.github.io/Discord-Addons/Snippets/Spotify.css");
 @import url("https://kurolibar.github.io/Discord-Addons/Snippets/Text.css");
 @import url("https://kurolibar.github.io/Discord-Addons/Snippets/UI.css");
-
-html {
-	cursor: crosshair !important;
-}
