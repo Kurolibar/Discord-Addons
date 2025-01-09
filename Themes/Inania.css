@@ -6,11 +6,28 @@
  * @source https://github.com/Kurolibar/Discord-Addons
 */
 
-
-
 /* @import url("https://kurolibar.github.io/Discord-Addons/Snippets/Navigation%20Bar%20Reduction.css"); */
 @import url("https://kurolibar.github.io/Discord-Addons/Snippets/Profile.css");
 @import url("https://kurolibar.github.io/Discord-Addons/Snippets/Sidebar.css");
 @import url("https://kurolibar.github.io/Discord-Addons/Snippets/Spotify.css");
 @import url("https://kurolibar.github.io/Discord-Addons/Snippets/Text.css");
 @import url("https://kurolibar.github.io/Discord-Addons/Snippets/UI.css");
+
+/* Settings */
+:root {
+  /* Profile */
+
+  /* Sidebar */
+
+  /* Spotify */
+
+  /* Text */
+
+  /* UI */
+  /* Override Theme Chat Background */
+  --channeltextarea-background: transparent;
+  --scb-applauncher-padding: -52px;
+  /* border-radius of bar */
+  --scb-border-radius: 8px;
+  /* default = 8px */
+}
