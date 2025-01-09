@@ -5,8 +5,8 @@
 [class*="content_"],
 [class*="messagesWrapper_"],
 [class*="text"] {
-	font-family: "MS Gothic" !important;
-	/* font-weight: 400 !important;
+  font-family: "MS Gothic" !important;
+  /* font-weight: 400 !important;
 	/* change the font name if you need to, make sure that you import includes the required weights */
 }
 
@@ -14,26 +14,28 @@
 [class*="username_"][style],
 .mention[style],
 [class*="membersGroup_"] [style] {
-	filter: contrast(0.2) brightness(1.2) saturate(300%);
+  filter: contrast(0.2) brightness(1.2) saturate(300%);
 }
 
 [class*="subtitleContainer_"] [class*="input_"] {
-	font-family: "Nanum Gothic Coding" !important;
-	font-weight: inherit !important;
+  font-family: "Nanum Gothic Coding" !important;
+  font-weight: inherit !important;
 }
 
 @font-face {
-	font-family: "Twemoji Mozilla";
-	src: url("https://vendicated.github.io/random-files/Twemoji.Mozilla.ttf") format("truetype");
-	unicode-range: U+1F1E6-1F1FF;
+  font-family: "Twemoji Mozilla";
+  src: url("https://vendicated.github.io/random-files/Twemoji.Mozilla.ttf")
+    format("truetype");
+  unicode-range: U+1F1E6-1F1FF;
 }
 
 @font-face {
-	font-family: "dashless";
-	size-adjust: 110%;
-	/*adjust this to change word spacing*/
-	src: url("https://vendicated.github.io/random-files/Dashless.woff2") format("woff2");
-	unicode-range: U+002D;
+  font-family: "dashless";
+  size-adjust: 110%;
+  /*adjust this to change word spacing*/
+  src: url("https://vendicated.github.io/random-files/Dashless.woff2")
+    format("woff2");
+  unicode-range: U+002D;
 }
 
 [data-list-item-id^=channels___]:not([role=button]),
@@ -73,54 +75,55 @@
 /* inbox */
 [class^=quickswitcher_] [class^=name_]
 
-/* ctrl+k */
-	{
-	font-family: "Twemoji Mozilla", "dashless", "MS Gothic";
+/* ctrl+k */ {
+  font-family: "Twemoji Mozilla", "dashless", "MS Gothic";
 }
 
-[class^="emptyChannelIcon_"]~[class*="description_"]>* {
-	font-family: "MS Gothic";
+[class^="emptyChannelIcon_"] ~ [class*="description_"] > * {
+  font-family: "MS Gothic";
 }
 
 /* Bot Icons */
-[class*="botTag_"]:not([class*="botTagOP"],
-	[class*="botTagRemix"],
-	[class*="botTagAI"],
-	[class*="systemTag"]) {
-	content: url("data:image/svg+xml,%3Csvg height='20' width='20' viewBox='0 0 690 512' xmlns='http://www.w3.org/2000/svg' fill='%23ffffff'%3E%3Cpath d='m32 224h32v192h-32a31.96166 31.96166 0 0 1 -32-32v-128a31.96166 31.96166 0 0 1 32-32zm512-48v272a64.06328 64.06328 0 0 1 -64 64h-320a64.06328 64.06328 0 0 1 -64-64v-272a79.974 79.974 0 0 1 80-80h112v-64a32 32 0 0 1 64 0v64h112a79.974 79.974 0 0 1 80 80zm-280 80a40 40 0 1 0 -40 40 39.997 39.997 0 0 0 40-40zm-8 128h-64v32h64zm96 0h-64v32h64zm104-128a40 40 0 1 0 -40 40 39.997 39.997 0 0 0 40-40zm-8 128h-64v32h64zm192-128v128a31.96166 31.96166 0 0 1 -32 32h-32v-192h32a31.96166 31.96166 0 0 1 32 32z'/%3E%3C/svg%3E%0A");
+[class*="botTag_"]:not(
+    [class*="botTagOP"],
+    [class*="botTagRemix"],
+    [class*="botTagAI"],
+    [class*="systemTag"]
+  ) {
+  content: url("data:image/svg+xml,%3Csvg height='20' width='20' viewBox='0 0 690 512' xmlns='http://www.w3.org/2000/svg' fill='%23ffffff'%3E%3Cpath d='m32 224h32v192h-32a31.96166 31.96166 0 0 1 -32-32v-128a31.96166 31.96166 0 0 1 32-32zm512-48v272a64.06328 64.06328 0 0 1 -64 64h-320a64.06328 64.06328 0 0 1 -64-64v-272a79.974 79.974 0 0 1 80-80h112v-64a32 32 0 0 1 64 0v64h112a79.974 79.974 0 0 1 80 80zm-280 80a40 40 0 1 0 -40 40 39.997 39.997 0 0 0 40-40zm-8 128h-64v32h64zm96 0h-64v32h64zm104-128a40 40 0 1 0 -40 40 39.997 39.997 0 0 0 40-40zm-8 128h-64v32h64zm192-128v128a31.96166 31.96166 0 0 1 -32 32h-32v-192h32a31.96166 31.96166 0 0 1 32 32z'/%3E%3C/svg%3E%0A");
 }
 
 /* Chat box Text */
 [class*="inner_"] [class*="placeholder_"]::before {
-	content: "[ insert text here ]" !important;
+  content: "[ insert text here ]" !important;
 }
 
 /* Chat box Text in Restricted */
 [class*="innerDisabled_"] [class*="placeholder_"]::before {
-	content: "[ locked ]" !important;
+  content: "[ locked ]" !important;
 }
 
 /*Disabled Message Box in restricted*/
 [class*="channelTextAreaDisabled"] {
-	display: none !important;
+  display: none !important;
 }
 
 /* ^ If Themes modify feature */
 [class*="channelTextAreaDisabled"] {
-	opacity: 0 !important;
-	position: absolute !important;
-	height: 0px !important;
-	width: 0px !important;
-	z-index: 0 !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  height: 0px !important;
+  width: 0px !important;
+  z-index: 0 !important;
 }
 
 /*Typing*/
 [class*="typing_"] strong:last-child::after {
-	content: "";
+  content: "";
 }
 
 [class*="typing_"] strong:nth-last-child()::after {
-	content: "";
+  content: "";
 }
 
 /*Change Slash Command Menu & Emote background color*/
@@ -128,210 +131,77 @@
 [class*="autocomplete_"] [class*="categoryHeader_"],
 [class*="navButton_"],
 [class*="inspector_"] {
-	background: transparent !important;
-	backdrop-filter: blur(20px);
+  background: transparent !important;
+  backdrop-filter: blur(20px);
 }
 
 /* Slash Command cleaner */
 .appLauncherOnboardingCommandName_ec86aa .clickable_ec86aa {
-	background: 0 0;
-	padding-left: 0;
+  background: 0 0;
+  padding-left: 0;
 }
 
 .executedCommand_ec86aa .appLauncherOnboardingCommandName_ec86aa:hover {
-	background: 0 0;
+  background: 0 0;
 }
 
 /* No, I don't want to make a thread from a chain of more than 2 replies */
 [class*="threadSuggestionBar_"] {
-	display: none;
+  display: none;
 }
 
 /* not circle */
 [class^="avatar_"] {
-	border-radius: 25%;
+  border-radius: 25%;
 }
 
 /* Alligned Chat */
-/**
- * @name Seamless Chat Bar
- * @author NSPG911
- * @version 1.0.5
- * @description Moves around elements near the Chat Bar to be seamless with the message bar
- * @source https://nspc911.github.io/vc-themes/SeamlessChatBar.theme.css
-*/
-
-:root {
-	/* Use if your theme overwrites the color 
-	  --channeltextarea-background: var(--backgroundColor01);*/
-	/* set to `0px` if no applauncher */
-	--scb-applauncher-padding: -52px;
-	/* border-radius of bar */
-	--scb-border-radius: 8px /* default = 8px */;
-  }
-  
-  [class^="chatContent_"] {
-	&:has([class^="channelTextAreaDisabled"]) {
-	  --scb-applauncher-padding: 0px; /* because you cant use them dumbass */
-	}
-	> [class^="form_"] {
-	  margin-top: -20px;
-	  transition: margin-top 1s ease;
-	  background: transparent !important;
-	  &::before {
-		background: transparent !important;
-	  }
-	  [class^="typing_"] {
-		top: 0;
-		transform: translateY(-100%);
-		background: transparent !important;
-		[class^="cooldownWrapper_"] {
-		  background-color: var(--channeltextarea-background);
-		  border-radius: var(--scb-border-radius) var(--scb-border-radius) 0px 0px;
-		  padding: 2.5px 7.5px 2.75px 7.5px;
-		  transform: translateX(var(--scb-applauncher-padding));
-		}
-		[class^="typingDots_"] {
-		  background-color: var(--channeltextarea-background);
-		  border-radius: var(--scb-border-radius) var(--scb-border-radius) 0px 0px;
-		  padding-right: 7.5px;
-		}
-	  }
-	  [class^="channelTextArea_"] {
-		border-radius: var(--scb-border-radius);
-		margin-bottom: 16px; /* equal distance from left-right and bottom */
-		[class^="stackedBars"] {
-		  background: transparent;
-		}
-	  }
-	}
-	[class^="jumpToPresentBar_"] {
-	  opacity: 1 !important;
-	  background-color: var(--channeltextarea-background) !important;
-	  padding-bottom: 0;
-	  right: calc(16px - var(--scb-applauncher-padding));
-	  transform: translateY(-100%);
-	  box-shadow: none !important;
-	}
-	[class^="scrollableContainer_"] {
-	  border-radius: var(--scb-border-radius);
-	}
-	/* If/Else statements <:blobcatcozy:1026533070955872337> */
-	[class^="form_"]:has([class^="typing_"]) {
-	  margin-top: 0;
-	}
-  
-	&:has([class^="typingDots_"] > svg) {
-	  [class^="jumpToPresentBar_"],
-	  [class^="replyBar_"],
-	  [class^="channelTextArea_"],
-	  [class^="scrollableContainer_"] {
-		border-top-left-radius: 0px !important;
-	  }
-	}
-  
-	&:has([class^="cooldownWrapper_"]) {
-	  [class^="jumpToPresentBar_"],
-	  [class^="replyBar_"],
-	  [class^="channelTextArea_"],
-	  [class^="scrollableContainer_"] {
-		border-top-right-radius: 0px !important;
-	  }
-	}
-  
-	&:has([class^="jumpToPresentBar_"]) {
-	  [class^="replyBar_"],
-	  [class^="channelTextArea_"],
-	  [class^="scrollableContainer_"] {
-		border-top-left-radius: 0px !important;
-		border-top-right-radius: 0px !important;
-	  }
-	}
-  
-	&:has([class^="replyBar_"]) {
-	  [class^="channelTextArea_"],
-	  [class^="scrollableContainer_"] {
-		border-top-left-radius: 0px !important;
-		border-top-right-radius: 0px !important;
-	  }
-	}
-	&:has([class^="jumpToPresentBar_"]) {
-	  [class^="typing_"] {
-		transform: translateY(-200%) !important;
-	  }
-	  > [class^="form_"] {
-		margin-top: -24px;
-	  }
-	}
-  }
-  
-
-/* merge app launcher to be part of the chat bar */
-div[class^="channelTextArea_"]>div[class^="scrollableContainer_"] {
-	margin-right: -10px;
-
-	&:not(:has(> [class^="inner_"][class*="innerDisabled_"])) {
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
-	}
-}
-
-div[class^="channelAppLauncher_"] {
-	--channeltextarea-background: transparent;
-	margin-left: 0;
-	min-width: 44px;
-	background: var(--bg-overlay-3, var(--channeltextarea-background));
-	border-top-right-radius: 8px;
-	border-bottom-right-radius: 8px;
-
-	[class^="buttonContainer_"] {
-		top: 0;
-		position: absolute;
-	}
-}
+@import url(https://nspc911.github.io/vc-themes/SeamlessChatBar.theme.css);
+/* Merge App Launcher to Chat */
+@import url("https://raw.githubusercontent.com/tom22k/discord-css/main/Themes/Snippets/MergeAppLauncher.css");
 
 div[class*="buttonContainer_"] [class*="wrapper_"] {
-	background: #ffffff1e !important;
+  background: #ffffff1e !important;
 }
 
 div[class*="buttonContainer_"] [class*="button_"]:hover {
-	background: #0000004f;
-	transition: 0.25s 0.075s;
+  background: #0000004f;
+  transition: 0.25s 0.075s;
 }
 
 /* "(edited)" text timestamps */
 span[class*="timestamp_"] time[aria-label*="Edited"]::after {
-	content: "✎" !important;
-	font-size: 0.725rem;
-	font-weight: 400;
+  content: "✎" !important;
+  font-size: 0.725rem;
+  font-weight: 400;
 }
 
 /* message header timestamps */
 span[class*="timestampInline_"] time::after {
-	content: attr(aria-label);
-	font-size: 0.65rem;
-	font-weight: 400;
+  content: attr(aria-label);
+  font-size: 0.65rem;
+  font-weight: 400;
 }
 
 /* header-less multi-line hover timestamps */
 span[class*="timestampVisibleOnHover_"] time::after {
-	content: attr(aria-label);
-	position: absolute;
-	font-size: 0.6rem;
-	line-height: 0.85rem;
-	width: 65px;
-	left: -1px;
-	top: -2px;
+  content: attr(aria-label);
+  position: absolute;
+  font-size: 0.6rem;
+  line-height: 0.85rem;
+  width: 65px;
+  left: -1px;
+  top: -2px;
 }
 
 /* hide the old timestamps */
 span[class*="timestampInline_"],
 span[class*="timestampVisibleOnHover_"] {
-	font-size: 0rem !important;
+  font-size: 0rem !important;
 }
 
 span[class*="edited_"] {
-	position: relative;
-	right: 95px;
-	color: transparent;
+  position: relative;
+  right: 95px;
+  color: transparent;
 }
