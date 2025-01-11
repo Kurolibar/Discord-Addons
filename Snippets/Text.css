@@ -8,7 +8,7 @@
 [class*="containerDefault_"],
 [class*="content_"],
 [class*="messagesWrapper_"],
-[class*="text"] {
+[class*="text_"] {
   font-family: "MS Gothic" !important;
   /* font-weight: 400 !important;
 	/* change the font name if you need to, make sure that you import includes the required weights */
