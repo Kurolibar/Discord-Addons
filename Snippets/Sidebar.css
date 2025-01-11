@@ -45,3 +45,30 @@
 /* Gradient User Status */
 /* @import url('https://ukriu.github.io/cssCord/Other/gradientDM.css'); */
 @import url('https://ukriu.github.io/cssCord/Other/gradientML.css');
+
+[class^="memberInner"]:has(div>div[aria-label*="Online"]) {
+    background: linear-gradient(to left, rgba(68, 105, 68, .25), transparent);
+}
+[class^="memberInner"]:has(div>div[aria-label*="Idle"]) {
+    background: linear-gradient(to left, rgba(135, 105, 75, .25), transparent);
+}
+[class^="memberInner"]:has(div>div[aria-label*="Do Not Disturb"]) {
+    background: linear-gradient(to left, rgba(130, 70, 70, .25), transparent);
+}
+[class^="memberInner"]:has(div>div[aria-label*="Streaming"]) {
+    background: linear-gradient(to left, rgba(63, 33, 88, .25) , transparent);
+}
+
+/* Remove the Create Invite button from Channel Lists */
+[class^="iconVisibility_"] [aria-label="Create Invite"] {
+    display: none !important;
+}
+[class^="iconVisibility_"] [aria-label="Edit Channel"] {
+    display: none !important;
+}
+[class^="iconVisibility_"] [aria-label="Create Channel"] {
+    display: none !important;
+}
+[class^="iconVisibility_"] [class^="channelInfo_"] {
+    display: none !important;
+}
