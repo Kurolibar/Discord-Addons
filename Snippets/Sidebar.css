@@ -63,23 +63,13 @@
   background: linear-gradient(to left, rgba(63, 33, 88, 0.25), transparent);
 }
 
-/* Remove the Create Invite button from Channel Lists */
-/* 
-[class^="iconVisibility_"] [aria-label="Create Invite"] {
-  display: none !important;
-}
-[class^="iconVisibility_"] [aria-label="Edit Channel"] {
-  display: none !important;
-}
-[class^="iconVisibility_"] [aria-label="Create Channel"] {
-  display: none !important;
-}
-[class^="iconVisibility_"] [class^="channelInfo_"] {
-  display: none !important;
-}
-
+/* Remove some Icons from Channel Lists */
 [class^="iconVisibility_"] {
-	[aria-label="Create Invite"], [aria-label="Edit Channel"],[aria-label="Create Channel"],[class^="channelInfo_"]{
-		display: none
+
+	[aria-label="Create Invite"],
+	[aria-label="Edit Channel"],
+	[aria-label="Create Channel"],
+	[class^="channelInfo_"] {
+		display: none !important;
 	}
-} */
+}
