@@ -70,3 +70,10 @@ div[aria-label="Add Super Reaction"] {
 button[id="super-reaction-picker-tab"] {
 	display: none;
 }
+
+/* Pending Apps */
+/* .container_ae3d49 */
+[class^="container_"] [data-dnd-name^="Pending Applications"] {
+    visibility: hidden;
+    height: 5px;
+}
