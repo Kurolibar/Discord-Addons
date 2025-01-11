@@ -41,3 +41,7 @@
 [class*=layerContainer] [class*=popout]:has([class*=text-xs-medium], [class*=options]){
 	display: flex;
 }
+
+/* Gradient User Status */
+@import url('https://ukriu.github.io/cssCord/Other/gradientDM.css');
+@import url('https://ukriu.github.io/cssCord/Other/gradientML.css');
