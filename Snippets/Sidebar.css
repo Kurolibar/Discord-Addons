@@ -16,7 +16,7 @@
 [class^="activityPanel_"] {
   background: linear-gradient(transparent, hsla(0, 0%, 0%, 0.5)) !important;
 }
-[class^="sidebar_"]
+/* [class^="sidebar_"]
   [class^="scrollerBase_"]
   [class^="content_eed6a8"]:not([aria-label*="Direct Messages"]) {
   background-image: var(--side-image),
@@ -38,7 +38,7 @@
 }
 [class^="avatar_"] {
   filter: unset;
-}
+} */
 /* VC Hang Status */
 [class^="iconGroup"]:has([class^="hangStatusIcon"], [class^="gameIcon"]) {
   display: flex;
