@@ -65,7 +65,7 @@
 
 /* Remove the Create Invite button from Channel Lists */
 [class^="iconVisibility_"] {
-	[aria-label="Create Invite"], [aria-label="Edit Channel"],[aria-label="Create Channel"],[class^="channelInfo_"]{
+	[class^="channelInfo_"],[aria-label="Create Invite"], [aria-label="Edit Channel"],[aria-label="Create Channel"],[aria-label="Close DM"]{
 		display: none
 	}
 }
