@@ -16,27 +16,28 @@
 [class^="activityPanel_"] {
   background: linear-gradient(transparent, hsla(0, 0%, 0%, 0.5)) !important;
 }
-/* [class^="sidebar_"] [class^="scrollerBase_"] [class^="content_eed6a8"]:not([aria-label*="Direct Messages"]) {
-  background-image: var(--side-image),
-    linear-gradient(0deg, transparent 0%, black 0%), var(--side-image);
-  background-size: 90px, cover;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: 100px;
-  opacity: 0.85;
-  transition: 0.1s 0.025s;
-  background-blend-mode: luminosity, multiply;
+
+/* Sidebar Image */
+[class*="sidebar_"]:not(:has([aria-label*="Direct Messages"])) {
+  [class*="content_"] {
+    background-image: var(--side-image),
+      linear-gradient(0deg, transparent 0%, black 0%), var(--side-image);
+    background-size: 90px, cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 100px;
+    background-blend-mode: luminosity, multiply;
+  }
+
+  [class*="content_"]:hover {
+    image-rendering: optimizeQuality;
+    background-blend-mode: normal;
+  }
+
+  [class*="avatar_"] {
+    filter: unset;
+  }
 }
-[class^="sidebar_"] [class^="scrollerBase_"] [class^="content_eed6a8"]:hover {
-  opacity: 1;
-  image-rendering: optimizeQuality;
-  background-image: var(--side-image),
-    linear-gradient(0deg, transparent 0%, black 0%), var(--side-image);
-  background-blend-mode: normal;
-}
-[class^="avatar_"] {
-  filter: unset;
-} */
 /* VC Hang Status */
 [class^="iconGroup"]:has([class^="hangStatusIcon"], [class^="gameIcon"]) {
   display: flex;
