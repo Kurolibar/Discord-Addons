@@ -1,5 +1,5 @@
 /* Modified Profile Popup */
-[class*="userPopoutOuter_"] {
+[class^="userPopoutOuter_"] {
   /*--profile-gradient-primary-color: transparent !important;*/
   --profile-gradient-secondary-color: transparent !important;
   --profile-gradient-overlay-color: transparent !important;
@@ -11,7 +11,7 @@
   position: relative !important;
   backdrop-filter: blur(6px);
 }
-[class*="userPanelOuter_"]::before {
+[class^="userPanelOuter_"]::before {
   content: "";
   position: absolute;
   top: 0;
@@ -20,22 +20,22 @@
   left: 0;
   backdrop-filter: blur(5px);
 }
-[class*="profilePanel_"] {
+[class^="profilePanel_"] {
   background: transparent !important;
 }
-[class*="userPanelOuter_"] {
+[class^="userPanelOuter_"] {
   --profile-gradient-primary-color: none !important;
   --profile-gradient-overlay-color: none !important;
   backdrop-filter: blur(1px) !important;
 }
-[class*="activityBiteSizePopout_"] {
+[class^="activityBiteSizePopout_"] {
   background: rgba(255, 255, 255, 0.25) !important;
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 5px;
   padding-bottom: 5px;
 }
-/*[class*=activityBiteSizePopout_]::before {
+/*[class^=activityBiteSizePopout_]::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -50,48 +50,48 @@
 	opacity: .51 !important;
 }
 */
-[class*="userPopoutInner_"] [class*="eyebrow_"] {
+[class^="userPopoutInner_"] [class^="eyebrow_"] {
   display: none;
 }
-[class*="userProfileModalInner_"] [class*="note_"] {
+[class^="userProfileModalInner_"] [class^="note_"] {
   visibility: visible !important;
   opacity: 0%;
   transition: opacity 0.25s;
 }
-[class*="note_"]:hover {
+[class^="note_"]:hover {
   opacity: 100%;
 }
 /* Match Status Bubble color with Profile Primary Color */
-[class*="statusBubble_"] {
+[class^="statusBubble_"] {
   background-color: var(--profile-gradient-primary-color);
 }
-[class*="statusBubbleOuter_"]:before {
+[class^="statusBubbleOuter_"]:before {
   background-color: var(--profile-gradient-primary-color);
 }
-[class*="statusBubbleOuter_"]:after {
+[class^="statusBubbleOuter_"]:after {
   background-color: var(--profile-gradient-primary-color);
 }
 /*Role Colour*/
 /* Target the role elements and apply styles */
-[class*="role_"] {
+[class^="role_"] {
   transform: translate(0);
   border: 0;
   border-radius: 5px !important;
   --transparency: 0.4; /* You may want to adjust the transparency value */
 }
 /* Target the roleRemoveIcon and adjust its positioning */
-[class*="role_"] [class*="roleRemoveIcon_"] {
+[class^="role_"] [class^="roleRemoveIcon_"] {
   margin: 0;
   left: unset;
   transform: translate(1px, -5px) scale(450%);
 }
 
-[class*="role_"] [class*="roleRemoveButton_"] {
+[class^="role_"] [class^="roleRemoveButton_"] {
   margin: 0.5;
   left: unset;
 }
 /* Target the roleCircle element and apply additional styles */
-[class*="role_"] [class*="roleCircle_"]::before {
+[class^="role_"] [class^="roleCircle_"]::before {
   content: "";
   position: absolute;
   top: 0;
@@ -109,7 +109,7 @@
   opacity: var(--transparency) !important;
 }
 /* Unsimplfy Profile Roles */
-[class*="userPopoutInner_"] > [class*="body_"] [class^="descriptionClamp_"] {
+[class^="userPopoutInner_"] > [class^="body_"] [class^="descriptionClamp_"] {
   -webkit-line-clamp: unset;
   max-height: 112px;
   overflow-x: hidden;
@@ -132,6 +132,6 @@
     min-height: 40px;
   }
 }
-[class*="viewFullBio_"] {
+[class^="viewFullBio_"] {
   visibility: hidden;
 }

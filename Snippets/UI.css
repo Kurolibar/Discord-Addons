@@ -1,51 +1,51 @@
 @import url("https://d3sox.github.io/complementary-discord-theme/hide-nitro-upselling.theme.css");
 
 /* Summaries*/
-[class*="topicsPillContainer_"],
-[class*="topicsPillCaret_"],
-[class*="newTopicsBarContainer_"] {
+[class^="topicsPillContainer_"],
+[class^="topicsPillCaret_"],
+[class^="newTopicsBarContainer_"] {
   background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)) !important;
   backdrop-filter: blur(1px);
   border: 1px !important;
 }
-[class*="barButtonBase_"] {
+[class^="barButtonBase_"] {
   align-items: right;
   width: max-content;
   margin-left: auto;
 }
-[class*="barButtonBase_"] [class*="newTopicsBarCompact_"] {
+[class^="barButtonBase_"] [class^="newTopicsBarCompact_"] {
   font-size: 0;
 }
-[class*="barButtonBase_"] [class*="newTopicsBarCompact_"]::after {
+[class^="barButtonBase_"] [class^="newTopicsBarCompact_"]::after {
   font-size: initial;
   content: " R E A D ";
 }
 
 /* Search Bar text */
-[class*="searchBarComponent_"] {
+[class^="searchBarComponent_"] {
   visibility: hidden;
 }
-[class*="searchBarComponent_"]::before {
+[class^="searchBarComponent_"]::before {
   content: "[ n a v i g a t e ]" !important;
   visibility: visible;
 }
-[class*="quickswitcher_"] [class*="input_"]::placeholder {
+[class^="quickswitcher_"] [class^="input_"]::placeholder {
   visibility: hidden;
   text-align: center;
 }
-[class*="searchBar_"] [class*="input_"]::placeholder {
+[class^="searchBar_"] [class^="input_"]::placeholder {
   visibility: hidden;
 }
 /* Friends */
-[class*="children_"] [class*="titleWrapper_"] {
+[class^="children_"] [class^="titleWrapper_"] {
   display: none;
 }
 /* Help Icon */
-[class*="upperContainer_"] [class*="anchor_"] {
+[class^="upperContainer_"] [class^="anchor_"] {
   display: none;
 }
 /* Nitro Tab */
-[class*="channel_"] [class*="link_"][href="/store"] {
+[class^="channel_"] [class^="link_"][href="/store"] {
   display: none;
 }
 

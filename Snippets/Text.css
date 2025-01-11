@@ -5,10 +5,10 @@
 @import url("https://raw.githubusercontent.com/Andrew6rant/Discord-plugins-and-themes/refs/heads/main/BetterMessageButtons.theme.css");
 
 /* Font */
-[class*="containerDefault_"],
-[class*="content_"],
-[class*="messagesWrapper_"],
-[class*="text_"] {
+[class^="containerDefault_"],
+[class^="content_"],
+[class^="messagesWrapper_"],
+[class^="text_"] {
   font-family: "MS Gothic" !important;
   /* font-weight: 400 !important;
 	/* change the font name if you need to, make sure that you import includes the required weights */
@@ -42,18 +42,18 @@
 [class^=channelNameContainer_],
 [class^=searchAnswer_],
 /* search */
-[class^=autocompleteRowContent_] [class*=autocompleteRowHeading_],
+[class^=autocompleteRowContent_] [class^=autocompleteRowHeading_],
 /* chat autocomplete */
 .channelWithIcon,
 /* channel mentions in chat */
 [class^=emptyChannelIcon_]+h3,
 /* start of new channel */
-[class^=emptyChannelIcon_]~[class*=description_],
-[class^=browser_] [class*=channelText_],
+[class^=emptyChannelIcon_]~[class^=description_],
+[class^=browser_] [class^=channelText_],
 /* channel browser*/
 [class^=returnButton_] [class^=text-],
 /*return button in channel browser*/
-[class^=placeholder][class*=slateTextArea],
+[class^=placeholder][class^=slateTextArea],
 /* chat input placeholder text */
 [class^=auditLog_] [class^=overflowEllipsis_] strong,
 /* audit log */
@@ -71,47 +71,47 @@
   font-family: "Twemoji Mozilla", "dashless", "MS Gothic";
 }
 
-[class^="emptyChannelIcon_"] ~ [class*="description_"] > * {
+[class^="emptyChannelIcon_"] ~ [class^="description_"] > * {
   font-family: "MS Gothic";
 }
 
 /* Readable Users */
-[class*="username_"][style],
+[class^="username_"][style],
 .mention[style],
-[class*="membersGroup_"] [style] {
+[class^="membersGroup_"] [style] {
   filter: contrast(0.2) brightness(1.2) saturate(300%);
 }
-[class*="subtitleContainer_"] [class*="input_"] {
+[class^="subtitleContainer_"] [class^="input_"] {
   font-family: "Nanum Gothic Coding" !important;
   font-weight: inherit !important;
 }
 
 /* Bot Icons */
-[class*="botTag_"]:not(
-    [class*="botTagOP"],
-    [class*="botTagRemix"],
-    [class*="botTagAI"],
-    [class*="systemTag"]
+[class^="botTag_"]:not(
+    [class^="botTagOP"],
+    [class^="botTagRemix"],
+    [class^="botTagAI"],
+    [class^="systemTag"]
   ) {
   content: url("data:image/svg+xml,%3Csvg height='20' width='20' viewBox='0 0 690 512' xmlns='http://www.w3.org/2000/svg' fill='%23ffffff'%3E%3Cpath d='m32 224h32v192h-32a31.96166 31.96166 0 0 1 -32-32v-128a31.96166 31.96166 0 0 1 32-32zm512-48v272a64.06328 64.06328 0 0 1 -64 64h-320a64.06328 64.06328 0 0 1 -64-64v-272a79.974 79.974 0 0 1 80-80h112v-64a32 32 0 0 1 64 0v64h112a79.974 79.974 0 0 1 80 80zm-280 80a40 40 0 1 0 -40 40 39.997 39.997 0 0 0 40-40zm-8 128h-64v32h64zm96 0h-64v32h64zm104-128a40 40 0 1 0 -40 40 39.997 39.997 0 0 0 40-40zm-8 128h-64v32h64zm192-128v128a31.96166 31.96166 0 0 1 -32 32h-32v-192h32a31.96166 31.96166 0 0 1 32 32z'/%3E%3C/svg%3E%0A");
 }
 
 /* Chat box Text */
-[class*="inner_"] [class*="placeholder_"]::before {
+[class^="inner_"] [class^="placeholder_"]::before {
   content: "[ insert text here ]" !important;
 }
 
 /* Restricted Chat box Text*/
-[class*="innerDisabled_"] [class*="placeholder_"]::before {
+[class^="innerDisabled_"] [class^="placeholder_"]::before {
   content: "[ locked ]" !important;
 }
 
 /* Hide Restricted Chat Box */
-[class*="channelTextAreaDisabled"] {
+[class^="channelTextAreaDisabled"] {
   display: none !important;
 }
 /* ^ If Themes modify feature */
-[class*="channelTextAreaDisabled"] {
+[class^="channelTextAreaDisabled"] {
   opacity: 0 !important;
   position: absolute !important;
   height: 0px !important;
@@ -120,18 +120,18 @@
 }
 
 /* Typing */
-[class*="typing_"] strong:last-child::after {
+[class^="typing_"] strong:last-child::after {
   content: "";
 }
-[class*="typing_"] strong:nth-last-child()::after {
+[class^="typing_"] strong:nth-last-child()::after {
   content: "";
 }
 
 /* Change Slash Command Menu & Emote background color */
-.theme-dark [class*="autocomplete_"],
-[class*="autocomplete_"] [class*="categoryHeader_"],
-[class*="navButton_"],
-[class*="inspector_"] {
+.theme-dark [class^="autocomplete_"],
+[class^="autocomplete_"] [class^="categoryHeader_"],
+[class^="navButton_"],
+[class^="inspector_"] {
   background: transparent !important;
   backdrop-filter: blur(20px);
 }
@@ -146,7 +146,7 @@
 }
 
 /* No, I don't want to make a thread from a chain of more than 2 replies */
-[class*="threadSuggestionBar_"] {
+[class^="threadSuggestionBar_"] {
   display: none;
 }
 
@@ -155,29 +155,29 @@
   border-radius: 25%;
 }
 
-div[class*="buttonContainer_"] [class*="wrapper_"] {
+div[class^="buttonContainer_"] [class^="wrapper_"] {
   background: #ffffff1e !important;
 }
-div[class*="buttonContainer_"] [class*="button_"]:hover {
+div[class^="buttonContainer_"] [class^="button_"]:hover {
   background: #0000004f;
   transition: 0.25s 0.075s;
 }
 
 /* Timestamps */
 /* Edited */
-span[class*="timestamp_"] time[aria-label*="Edited"]::after {
+span[class^="timestamp_"] time[aria-label*="Edited"]::after {
   content: "✎" !important;
   font-size: 0.725rem;
   font-weight: 400;
 }
 /* Message Header*/
-span[class*="timestampInline_"] time::after {
+span[class^="timestampInline_"] time::after {
   content: attr(aria-label);
   font-size: 0.65rem;
   font-weight: 400;
 }
 /* Multi-line Hover */
-span[class*="timestampVisibleOnHover_"] time::after {
+span[class^="timestampVisibleOnHover_"] time::after {
   content: attr(aria-label);
   position: absolute;
   font-size: 0.6rem;
@@ -187,11 +187,11 @@ span[class*="timestampVisibleOnHover_"] time::after {
   top: -2px;
 }
 /* Hide Default Timestamp */
-span[class*="timestampInline_"],
-span[class*="timestampVisibleOnHover_"] {
+span[class^="timestampInline_"],
+span[class^="timestampVisibleOnHover_"] {
   font-size: 0rem !important;
 }
-span[class*="edited_"] {
+span[class^="edited_"] {
   position: relative;
   right: 95px;
   color: transparent;
