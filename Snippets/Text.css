@@ -212,7 +212,7 @@ span[class*="edited_"] {
   + [class^="buttons_"] {
     position: absolute;
     right: 0;
-    background-color: hsl(var(--primary-560-hsl) / 0.5);
+    background-color: transparent;
     backdrop-filter: blur(3px);
     border-radius: 8px;
     &:not(:hover) > :not(:last-child) {
