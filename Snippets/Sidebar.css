@@ -2,27 +2,27 @@
 @import url("https://ukriu.github.io/cssCord/Other/gradientML.css");
 
 /* Floating User Panel*/
-[class^="sidebar_"] [class^="panels_"] [class^="container_"] {
+/* [class*="sidebar_"] [class*="panels_"] [class*="container_"] {
   border-top-left-radius: 5px !important;
   border-top-right-radius: 5px !important;
   background: transparent !important;
   color: transparent !important;
 }
-.theme-dark [class^="sidebar_"] [class^="panels_"] {
+.theme-dark [class*="sidebar_"] [class*="panels_"] {
   background: transparent !important;
   backdrop-filter: blur(1px) grayscale(50%);
 }
 .theme-dark .container_adcaac,
-[class^="activityPanel_"] {
+[class*="activityPanel_"] {
   background: linear-gradient(transparent, hsla(0, 0%, 0%, 0.5)) !important;
-}
+} */
 
 .theme-dark {
-  [class^="sidebar_"] {
-    [class^="panels_"] {
+  [class*="sidebar_"] {
+    [class*="panels_"] {
       background: transparent !important;
       backdrop-filter: blur(1px) grayscale(50%);
-      [class^="container_"] {
+      [class*="container_"] {
         border-top-left-radius: 5px !important;
         border-top-right-radius: 5px !important;
         background: transparent !important;
@@ -30,7 +30,7 @@
       }
     }
   }
-  [class^="activityPanel_"],
+  [class*="activityPanel_"],
   .container_adcaac {
     background: linear-gradient(transparent, hsla(0, 0%, 0%, 0.5)) !important;
   }
@@ -58,36 +58,36 @@
   }
 }
 /* VC Hang Status */
-[class^="iconGroup"]:has([class^="hangStatusIcon"], [class^="gameIcon"]) {
+[class*="iconGroup"]:has([class*="hangStatusIcon"], [class*="gameIcon"]) {
   display: flex;
   position: absolute;
   right: 101%;
 }
-[class^="layerContainer"]
-  [class^="popout"]:has([class^="text-xs-medium"], [class^="options"]) {
+[class*="layerContainer"]
+  [class*="popout"]:has([class*="text-xs-medium"], [class*="options"]) {
   display: flex;
 }
 
 /* Gradient User Status */
-[class^="memberInner"]:has(div > div[aria-label*="Online"]) {
+[class*="memberInner"]:has(div > div[aria-label*="Online"]) {
   background: linear-gradient(to left, rgba(68, 105, 68, 0.25), transparent);
 }
-[class^="memberInner"]:has(div > div[aria-label*="Idle"]) {
+[class*="memberInner"]:has(div > div[aria-label*="Idle"]) {
   background: linear-gradient(to left, rgba(135, 105, 75, 0.25), transparent);
 }
-[class^="memberInner"]:has(div > div[aria-label*="Do Not Disturb"]) {
+[class*="memberInner"]:has(div > div[aria-label*="Do Not Disturb"]) {
   background: linear-gradient(to left, rgba(130, 70, 70, 0.25), transparent);
 }
-[class^="memberInner"]:has(div > div[aria-label*="Streaming"]) {
+[class*="memberInner"]:has(div > div[aria-label*="Streaming"]) {
   background: linear-gradient(to left, rgba(63, 33, 88, 0.25), transparent);
 }
 
 /* Remove some Icons from Channel Lists */
-[class^="iconVisibility_"] {
+[class*="iconVisibility_"] {
   [aria-label="Create Invite"],
   [aria-label="Edit Channel"],
   [aria-label="Create Channel"],
-  [class^="channelInfo_"] {
+  [class*="channelInfo_"] {
     display: none !important;
   }
 }
