@@ -37,7 +37,7 @@
   /* default = 8px */
   --msg-solo-button-width: 36px;
   --msg-grid-button-padding: 32px;
-  --msg-grid-columns: ;
+  --msg-grid-columns: 1;
   --msg-button-height: 64px;
   --msg-button-border-radius: 8px;
   --msg-section-spacing: 12px;

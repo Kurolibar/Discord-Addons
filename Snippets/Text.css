@@ -155,7 +155,6 @@
   border-radius: 25%;
 }
 
-
 div[class*="buttonContainer_"] [class*="wrapper_"] {
   background: #ffffff1e !important;
 }
@@ -206,4 +205,28 @@ span[class*="edited_"] {
 }
 [aria-label="Message Actions"] {
   transition: 0.005s 0.05s;
+}
+
+[class^="textArea_"] {
+  margin-right: 24px;
+  + [class^="buttons_"] {
+    position: absolute;
+    right: 0;
+    background-color: hsl(var(--primary-560-hsl) / 0.5);
+    backdrop-filter: blur(3px);
+    border-radius: 8px;
+    &:not(:hover) > :not(:last-child) {
+      display: none;
+    }
+    /* Fix send message button */
+    &:not(:hover) > [class^="separator_"] {
+      margin-left: 0;
+      &::before {
+        display: none;
+      }
+      button > div {
+        margin-left: 8px;
+      }
+    }
+  }
 }
