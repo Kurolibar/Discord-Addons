@@ -2,23 +2,23 @@
 @import url("https://ukriu.github.io/cssCord/Other/gradientML.css");
 
 /* Floating User Panel*/
-[class*="sidebar_"] [class*="panels_"] [class*="container_"] {
+[class^="sidebar_"] [class^="panels_"] [class^="container_"] {
   border-top-left-radius: 5px !important;
   border-top-right-radius: 5px !important;
   background: transparent !important;
   color: transparent !important;
 }
-.theme-dark [class*="sidebar_"] [class*="panels_"] {
+.theme-dark [class^="sidebar_"] [class^="panels_"] {
   background: transparent !important;
   backdrop-filter: blur(1px) grayscale(50%);
 }
 .theme-dark .container_adcaac,
-[class*="activityPanel_"] {
+[class^="activityPanel_"] {
   background: linear-gradient(transparent, hsla(0, 0%, 0%, 0.5)) !important;
 }
-[class*="sidebar_"]
-  [class*="scrollerBase_"]
-  [class*="content_eed6a8"]:not([aria-label*="Direct Messages"]) {
+[class^="sidebar_"]
+  [class^="scrollerBase_"]
+  [class^="content_eed6a8"]:not([aria-label*="Direct Messages"]) {
   background-image: var(--side-image),
     linear-gradient(0deg, transparent 0%, black 0%), var(--side-image);
   background-size: 90px, cover;
@@ -29,24 +29,24 @@
   transition: 0.1s 0.025s;
   background-blend-mode: luminosity, multiply;
 }
-[class*="sidebar_"] [class*="scrollerBase_"] [class*="content_eed6a8"]:hover {
+[class^="sidebar_"] [class^="scrollerBase_"] [class^="content_eed6a8"]:hover {
   opacity: 1;
   image-rendering: optimizeQuality;
   background-image: var(--side-image),
     linear-gradient(0deg, transparent 0%, black 0%), var(--side-image);
   background-blend-mode: normal;
 }
-[class*="avatar_"] {
+[class^="avatar_"] {
   filter: unset;
 }
 /* VC Hang Status */
-[class*="iconGroup"]:has([class*="hangStatusIcon"], [class*="gameIcon"]) {
+[class^="iconGroup"]:has([class^="hangStatusIcon"], [class^="gameIcon"]) {
   display: flex;
   position: absolute;
   right: 101%;
 }
-[class*="layerContainer"]
-  [class*="popout"]:has([class*="text-xs-medium"], [class*="options"]) {
+[class^="layerContainer"]
+  [class^="popout"]:has([class^="text-xs-medium"], [class^="options"]) {
   display: flex;
 }
 
