@@ -17,6 +17,25 @@
   background: linear-gradient(transparent, hsla(0, 0%, 0%, 0.5)) !important;
 }
 
+.theme-dark {
+  [class^="sidebar_"] {
+    [class^="panels_"] {
+      background: transparent !important;
+      backdrop-filter: blur(1px) grayscale(50%);
+      [class^="container_"] {
+        border-top-left-radius: 5px !important;
+        border-top-right-radius: 5px !important;
+        background: transparent !important;
+        color: transparent !important;
+      }
+    }
+  }
+  [class^="activityPanel_"],
+  .container_adcaac {
+    background: linear-gradient(transparent, hsla(0, 0%, 0%, 0.5)) !important;
+  }
+}
+
 /* Sidebar Image */
 [class*="sidebar_"]:not(:has([aria-label*="Direct Messages"])) {
   [class*="content_"] {
@@ -65,11 +84,10 @@
 
 /* Remove some Icons from Channel Lists */
 [class^="iconVisibility_"] {
-
-	[aria-label="Create Invite"],
-	[aria-label="Edit Channel"],
-	[aria-label="Create Channel"],
-	[class^="channelInfo_"] {
-		display: none !important;
-	}
+  [aria-label="Create Invite"],
+  [aria-label="Edit Channel"],
+  [aria-label="Create Channel"],
+  [class^="channelInfo_"] {
+    display: none !important;
+  }
 }
