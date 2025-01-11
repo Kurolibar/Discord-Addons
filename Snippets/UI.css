@@ -1,12 +1,9 @@
-/* Wallpaper1 */
-:root {
-  --bg-opacity: 90%;
-  --wallpaper: url("https://kurolibar.github.io/Discord-Addons/Resources/Strings.jpg");
-}
-*/
+@import url("https://d3sox.github.io/complementary-discord-theme/hide-nitro-upselling.theme.css");
 
 /* Summaries*/
-[class*=topicsPillContainer_], [class*=topicsPillCaret_], [class*=newTopicsBarContainer_] {
+[class*="topicsPillContainer_"],
+[class*="topicsPillCaret_"],
+[class*="newTopicsBarContainer_"] {
   background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)) !important;
   backdrop-filter: blur(1px);
   border: 1px !important;
@@ -53,7 +50,6 @@
 }
 
 /* Hide Nitro gift button */
-@import url("https://d3sox.github.io/complementary-discord-theme/hide-nitro-upselling.theme.css");
 button[aria-label="Send a gift"] {
   display: none;
 }

@@ -19,6 +19,7 @@
   /* Profile */
 
   /* Sidebar */
+  --side-image: url(https://fauux.neocities.org/doorBK.gif);
   --gDM-online: linear-gradient(to right, rgb(68, 105, 68), transparent);
   --gDM-offline: linear-gradient(to right, rgb(66, 66, 66), transparent);
   --gDM-dnd: linear-gradient(to right, rgb(130, 70, 70), transparent);
@@ -42,4 +43,6 @@
   --msg-section-spacing: 12px;
 
   /* UI */
+  --bg-opacity: 90%;
+  --wallpaper: url("https://kurolibar.github.io/Discord-Addons/Resources/Strings.jpg");
 }
