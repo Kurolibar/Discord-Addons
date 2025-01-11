@@ -33,7 +33,7 @@
   --channeltextarea-background: transparent;
   --scb-applauncher-padding: 0px;
   /* border-radius of bar */
-  --scb-border-radius: 8px;
+  --scb-border-radius: 0px;
   /* default = 8px */
   --msg-solo-button-width: 36px;
   --msg-grid-button-padding: 32px;
