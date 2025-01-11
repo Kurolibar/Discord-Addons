@@ -16,9 +16,7 @@
 [class^="activityPanel_"] {
   background: linear-gradient(transparent, hsla(0, 0%, 0%, 0.5)) !important;
 }
-/* [class^="sidebar_"]
-  [class^="scrollerBase_"]
-  [class^="content_eed6a8"]:not([aria-label*="Direct Messages"]) {
+/* [class^="sidebar_"] [class^="scrollerBase_"] [class^="content_eed6a8"]:not([aria-label*="Direct Messages"]) {
   background-image: var(--side-image),
     linear-gradient(0deg, transparent 0%, black 0%), var(--side-image);
   background-size: 90px, cover;
