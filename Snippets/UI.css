@@ -1,79 +1,78 @@
 /* Wallpaper1 */
 :root {
-    --bg-opacity: 90%;
-    --wallpaper: url("https://kurolibar.github.io/Discord-Addons/Resources/Strings.jpg");
+  --bg-opacity: 90%;
+  --wallpaper: url("https://kurolibar.github.io/Discord-Addons/Resources/Strings.jpg");
 }
 */
 
 /* Summaries*/
 [class*=topicsPillContainer_], [class*=topicsPillCaret_], [class*=newTopicsBarContainer_] {
-	background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)) !important;
-	backdrop-filter: blur(1px);
-	border: 1px !important;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)) !important;
+  backdrop-filter: blur(1px);
+  border: 1px !important;
 }
-[class*=barButtonBase_] {
-	align-items: right;
-	width: max-content;
-	margin-left: auto;
+[class*="barButtonBase_"] {
+  align-items: right;
+  width: max-content;
+  margin-left: auto;
 }
-[class*=barButtonBase_] [class*=newTopicsBarCompact_] {
-	font-size: 0;
+[class*="barButtonBase_"] [class*="newTopicsBarCompact_"] {
+  font-size: 0;
 }
-[class*=barButtonBase_] [class*=newTopicsBarCompact_]::after {
-	font-size: initial;
-	content: " R E A D ";
+[class*="barButtonBase_"] [class*="newTopicsBarCompact_"]::after {
+  font-size: initial;
+  content: " R E A D ";
 }
-
 
 /* Search Bar text */
-[class*=searchBarComponent_]{
-	visibility: hidden;
+[class*="searchBarComponent_"] {
+  visibility: hidden;
 }
-[class*=searchBarComponent_]::before {
-	content: "[ n a v i g a t e ]" !important;
-	visibility: visible;
+[class*="searchBarComponent_"]::before {
+  content: "[ n a v i g a t e ]" !important;
+  visibility: visible;
 }
-[class*=quickswitcher_] [class*=input_]::placeholder {
-	visibility: hidden;
-	text-align: center;
+[class*="quickswitcher_"] [class*="input_"]::placeholder {
+  visibility: hidden;
+  text-align: center;
 }
-[class*=searchBar_] [class*=input_]::placeholder {
-	visibility: hidden;
+[class*="searchBar_"] [class*="input_"]::placeholder {
+  visibility: hidden;
 }
 /* Friends */
-[class*=children_] [class*=titleWrapper_] {
-	display: none;
+[class*="children_"] [class*="titleWrapper_"] {
+  display: none;
 }
 /* Help Icon */
-[class*=upperContainer_] [class*=anchor_] {
-	display: none;
+[class*="upperContainer_"] [class*="anchor_"] {
+  display: none;
 }
 /* Nitro Tab */
-[class*=channel_] [class*=link_][href="/store"] {
-	display: none;
+[class*="channel_"] [class*="link_"][href="/store"] {
+  display: none;
 }
 
 /* Hide Nitro gift button */
-@import url('https://d3sox.github.io/complementary-discord-theme/hide-nitro-upselling.theme.css');
+@import url("https://d3sox.github.io/complementary-discord-theme/hide-nitro-upselling.theme.css");
 button[aria-label="Send a gift"] {
-	display: none;
+  display: none;
 }
 /* Hide sticker picker button */
 button[aria-label="Open sticker picker"] {
-	display: none;
+  display: none;
 }
 /* Hide super reaction button */
 div[aria-label="Add Super Reaction"] {
-	display: none;
+  display: none;
 }
 /* Hide super reaction tab in emoji picker */
 button[id="super-reaction-picker-tab"] {
-	display: none;
+  display: none;
 }
 
 /* Pending Apps */
 /* .container_ae3d49 */
 [class^="container_"] [data-dnd-name^="Pending Applications"] {
-    visibility: hidden;
-    height: 5px;
+  visibility: hidden;
+  height: 5px;
 }

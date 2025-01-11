@@ -1,74 +1,80 @@
 /* Floating User Panel*/
-[class*=sidebar_] [class*=panels_] [class*=container_] {
-	border-top-left-radius: 5px !important;
-	border-top-right-radius: 5px !important;
-	background: transparent !important;
-	color: transparent !important;
+[class*="sidebar_"] [class*="panels_"] [class*="container_"] {
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  background: transparent !important;
+  color: transparent !important;
 }
-.theme-dark [class*=sidebar_] [class*=panels_] {
-	background: transparent !important;
-	backdrop-filter: blur(1px) grayscale(50%);
+.theme-dark [class*="sidebar_"] [class*="panels_"] {
+  background: transparent !important;
+  backdrop-filter: blur(1px) grayscale(50%);
 }
-.theme-dark .container_adcaac,[class*=activityPanel_] {
-	background: linear-gradient(transparent, hsla(0, 0%, 0%, 0.5)) !important;
+.theme-dark .container_adcaac,
+[class*="activityPanel_"] {
+  background: linear-gradient(transparent, hsla(0, 0%, 0%, 0.5)) !important;
 }
-[class*=sidebar_] [class*=scrollerBase_] [class*=content_eed6a8]:not([aria-label*="Direct Messages"]) {
-	--side-image: url(https://fauux.neocities.org/doorBK.gif);
-	background-image: var(--side-image), linear-gradient(0deg, transparent 0%, black 0%), var(--side-image);
-	background-size: 90px, cover;
-	background-repeat: no-repeat;
-	background-position-x: right;
-	background-position-y: 100px;
-	opacity: .85;
-	transition: 0.1s 0.025s;
-	background-blend-mode: luminosity, multiply;
+[class*="sidebar_"]
+  [class*="scrollerBase_"]
+  [class*="content_eed6a8"]:not([aria-label*="Direct Messages"]) {
+  --side-image: url(https://fauux.neocities.org/doorBK.gif);
+  background-image: var(--side-image),
+    linear-gradient(0deg, transparent 0%, black 0%), var(--side-image);
+  background-size: 90px, cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 100px;
+  opacity: 0.85;
+  transition: 0.1s 0.025s;
+  background-blend-mode: luminosity, multiply;
 }
-[class*=sidebar_] [class*=scrollerBase_] [class*=content_eed6a8]:hover {
-	opacity: 1;
-	image-rendering: optimizeQuality;
-	background-image: var(--side-image), linear-gradient(0deg, transparent 0%, black 0%), var(--side-image);
-	background-blend-mode: normal;
+[class*="sidebar_"] [class*="scrollerBase_"] [class*="content_eed6a8"]:hover {
+  opacity: 1;
+  image-rendering: optimizeQuality;
+  background-image: var(--side-image),
+    linear-gradient(0deg, transparent 0%, black 0%), var(--side-image);
+  background-blend-mode: normal;
 }
-[class*=avatar_] {
-	filter: unset;
+[class*="avatar_"] {
+  filter: unset;
 }
 /* VC Hang Status */
-[class*=iconGroup]:has([class*=hangStatusIcon], [class*=gameIcon]) {
-	display: flex;
-	position: absolute;
-	right: 101%;
+[class*="iconGroup"]:has([class*="hangStatusIcon"], [class*="gameIcon"]) {
+  display: flex;
+  position: absolute;
+  right: 101%;
 }
-[class*=layerContainer] [class*=popout]:has([class*=text-xs-medium], [class*=options]){
-	display: flex;
+[class*="layerContainer"]
+  [class*="popout"]:has([class*="text-xs-medium"], [class*="options"]) {
+  display: flex;
 }
 
 /* Gradient User Status */
 /* @import url('https://ukriu.github.io/cssCord/Other/gradientDM.css'); */
-@import url('https://ukriu.github.io/cssCord/Other/gradientML.css');
+@import url("https://ukriu.github.io/cssCord/Other/gradientML.css");
 
-[class^="memberInner"]:has(div>div[aria-label*="Online"]) {
-    background: linear-gradient(to left, rgba(68, 105, 68, .25), transparent);
+[class^="memberInner"]:has(div > div[aria-label*="Online"]) {
+  background: linear-gradient(to left, rgba(68, 105, 68, 0.25), transparent);
 }
-[class^="memberInner"]:has(div>div[aria-label*="Idle"]) {
-    background: linear-gradient(to left, rgba(135, 105, 75, .25), transparent);
+[class^="memberInner"]:has(div > div[aria-label*="Idle"]) {
+  background: linear-gradient(to left, rgba(135, 105, 75, 0.25), transparent);
 }
-[class^="memberInner"]:has(div>div[aria-label*="Do Not Disturb"]) {
-    background: linear-gradient(to left, rgba(130, 70, 70, .25), transparent);
+[class^="memberInner"]:has(div > div[aria-label*="Do Not Disturb"]) {
+  background: linear-gradient(to left, rgba(130, 70, 70, 0.25), transparent);
 }
-[class^="memberInner"]:has(div>div[aria-label*="Streaming"]) {
-    background: linear-gradient(to left, rgba(63, 33, 88, .25) , transparent);
+[class^="memberInner"]:has(div > div[aria-label*="Streaming"]) {
+  background: linear-gradient(to left, rgba(63, 33, 88, 0.25), transparent);
 }
 
 /* Remove the Create Invite button from Channel Lists */
 [class^="iconVisibility_"] [aria-label="Create Invite"] {
-    display: none !important;
+  display: none !important;
 }
 [class^="iconVisibility_"] [aria-label="Edit Channel"] {
-    display: none !important;
+  display: none !important;
 }
 [class^="iconVisibility_"] [aria-label="Create Channel"] {
-    display: none !important;
+  display: none !important;
 }
 [class^="iconVisibility_"] [class^="channelInfo_"] {
-    display: none !important;
+  display: none !important;
 }
