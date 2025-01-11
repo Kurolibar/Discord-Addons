@@ -107,11 +107,11 @@
 }
 
 /* Hide Restricted Chat Box */
-[class^="channelTextAreaDisabled"] {
+[class*="channelTextAreaDisabled"] {
   display: none !important;
 }
 /* ^ If Themes modify feature */
-[class^="channelTextAreaDisabled"] {
+[class*="channelTextAreaDisabled"] {
   opacity: 0 !important;
   position: absolute !important;
   height: 0px !important;
