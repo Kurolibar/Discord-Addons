@@ -10,18 +10,6 @@
 	/* change the font name if you need to, make sure that you import includes the required weights */
 }
 
-/* Readable Users */
-[class*="username_"][style],
-.mention[style],
-[class*="membersGroup_"] [style] {
-  filter: contrast(0.2) brightness(1.2) saturate(300%);
-}
-
-[class*="subtitleContainer_"] [class*="input_"] {
-  font-family: "Nanum Gothic Coding" !important;
-  font-weight: inherit !important;
-}
-
 @font-face {
   font-family: "Twemoji Mozilla";
   src: url("https://vendicated.github.io/random-files/Twemoji.Mozilla.ttf")
@@ -83,6 +71,17 @@
   font-family: "MS Gothic";
 }
 
+/* Readable Users */
+[class*="username_"][style],
+.mention[style],
+[class*="membersGroup_"] [style] {
+  filter: contrast(0.2) brightness(1.2) saturate(300%);
+}
+[class*="subtitleContainer_"] [class*="input_"] {
+  font-family: "Nanum Gothic Coding" !important;
+  font-weight: inherit !important;
+}
+
 /* Bot Icons */
 [class*="botTag_"]:not(
     [class*="botTagOP"],
@@ -98,16 +97,15 @@
   content: "[ insert text here ]" !important;
 }
 
-/* Chat box Text in Restricted */
+/* Restricted Chat box Text*/
 [class*="innerDisabled_"] [class*="placeholder_"]::before {
   content: "[ locked ]" !important;
 }
 
-/*Disabled Message Box in restricted*/
+/* Hide Restricted Chat Box */
 [class*="channelTextAreaDisabled"] {
   display: none !important;
 }
-
 /* ^ If Themes modify feature */
 [class*="channelTextAreaDisabled"] {
   opacity: 0 !important;
@@ -117,16 +115,15 @@
   z-index: 0 !important;
 }
 
-/*Typing*/
+/* Typing */
 [class*="typing_"] strong:last-child::after {
   content: "";
 }
-
 [class*="typing_"] strong:nth-last-child()::after {
   content: "";
 }
 
-/*Change Slash Command Menu & Emote background color*/
+/* Change Slash Command Menu & Emote background color */
 .theme-dark [class*="autocomplete_"],
 [class*="autocomplete_"] [class*="categoryHeader_"],
 [class*="navButton_"],
@@ -135,12 +132,11 @@
   backdrop-filter: blur(20px);
 }
 
-/* Slash Command cleaner */
+/* Slash Command cleaner WIP */
 .appLauncherOnboardingCommandName_ec86aa .clickable_ec86aa {
   background: 0 0;
   padding-left: 0;
 }
-
 .executedCommand_ec86aa .appLauncherOnboardingCommandName_ec86aa:hover {
   background: 0 0;
 }
@@ -150,7 +146,7 @@
   display: none;
 }
 
-/* not circle */
+/* Box Avatar */
 [class^="avatar_"] {
   border-radius: 25%;
 }
@@ -163,27 +159,25 @@
 div[class*="buttonContainer_"] [class*="wrapper_"] {
   background: #ffffff1e !important;
 }
-
 div[class*="buttonContainer_"] [class*="button_"]:hover {
   background: #0000004f;
   transition: 0.25s 0.075s;
 }
 
-/* "(edited)" text timestamps */
+/* Timestamps */
+/* Edited */
 span[class*="timestamp_"] time[aria-label*="Edited"]::after {
   content: "✎" !important;
   font-size: 0.725rem;
   font-weight: 400;
 }
-
-/* message header timestamps */
+/* Message Header*/
 span[class*="timestampInline_"] time::after {
   content: attr(aria-label);
   font-size: 0.65rem;
   font-weight: 400;
 }
-
-/* header-less multi-line hover timestamps */
+/* Multi-line Hover */
 span[class*="timestampVisibleOnHover_"] time::after {
   content: attr(aria-label);
   position: absolute;
@@ -193,13 +187,11 @@ span[class*="timestampVisibleOnHover_"] time::after {
   left: -1px;
   top: -2px;
 }
-
-/* hide the old timestamps */
+/* Hide Default Timestamp */
 span[class*="timestampInline_"],
 span[class*="timestampVisibleOnHover_"] {
   font-size: 0rem !important;
 }
-
 span[class*="edited_"] {
   position: relative;
   right: 95px;
