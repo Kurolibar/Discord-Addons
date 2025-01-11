@@ -83,11 +83,10 @@
 }
 
 /* Remove some Icons from Channel Lists */
-/* [class*="iconVisibility_"] {
+[class*="iconVisibility_"] {
   [aria-label="Create Invite"],
   [aria-label="Edit Channel"],
-  [aria-label="Create Channel"],
-  [class*="channelInfo_"] {
+  [aria-label="Create Channel"] {
     display: none !important;
   }
-} */
+}
