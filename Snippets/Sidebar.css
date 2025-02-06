@@ -37,7 +37,7 @@
 }
 
 /* Sidebar Image */
-/* [class*="sidebar_"]:not(:has([aria-label*="Direct Messages"])) {
+[class*="sidebar_"]:not(:has([aria-label*="Direct Messages"])) {
   [aria-label="Channels"] {
     background-image: var(--side-image),
       linear-gradient(0deg, transparent 0%, black 0%), var(--side-image);
@@ -47,7 +47,7 @@
     background-position-y: 100px;
     background-blend-mode: luminosity, multiply;
   }
-  [class*="content_"]:hover {
+  [aria-label="Channels"]:hover {
     image-rendering: optimizeQuality;
     background-blend-mode: normal;
   }
@@ -55,7 +55,7 @@
   [class*="avatar_"] {
     filter: unset;
   }
-} */
+}
 /* VC Hang Status */
 [class*="iconGroup"]:has([class*="hangStatusIcon"], [class*="gameIcon"]) {
   display: flex;
