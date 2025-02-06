@@ -37,8 +37,8 @@
 }
 
 /* Sidebar Image */
-[class*="sidebar_"]:not(:has([aria-label*="Direct Messages"])) {
-  [class*="content_"] {
+/* [class*="sidebar_"]:not(:has([aria-label*="Direct Messages"])) {
+  [aria-label="Channels"] {
     background-image: var(--side-image),
       linear-gradient(0deg, transparent 0%, black 0%), var(--side-image);
     background-size: 90px, cover;
@@ -47,11 +47,10 @@
     background-position-y: 100px;
     background-blend-mode: luminosity, multiply;
   }
-
   [class*="content_"]:hover {
     image-rendering: optimizeQuality;
     background-blend-mode: normal;
-  }
+  } */
 
   [class*="avatar_"] {
     filter: unset;
