@@ -50,12 +50,12 @@
   [class*="content_"]:hover {
     image-rendering: optimizeQuality;
     background-blend-mode: normal;
-  } */
+  }
 
   [class*="avatar_"] {
     filter: unset;
   }
-}
+} */
 /* VC Hang Status */
 [class*="iconGroup"]:has([class*="hangStatusIcon"], [class*="gameIcon"]) {
   display: flex;
