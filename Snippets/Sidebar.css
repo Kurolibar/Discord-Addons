@@ -28,19 +28,19 @@
 [class*="sidebar_"]:not(:has([aria-label*="Direct Messages"])) {
   [aria-label="Channels"] {
     background-image: linear-gradient(to left, transparent 0%, black 35%),
-	  var(--side-image),
-      linear-gradient(transparent 0%, black 0%),
-	  var(--side-image);
+      var(--side-image), linear-gradient(transparent 0%, black 0%),
+      var(--side-image);
     background-size: cover, 89px;
     background-repeat: no-repeat;
     background-position: center, 17vmin 10vmin;
-	background-attachment: local, fixed;
-	background-blend-mode: luminosity;
-	image-rendering: optimizeSpeed;
+    background-attachment: local, fixed;
+    background-blend-mode: luminosity;
   }
+
   [aria-label="Channels"]:hover {
     background-blend-mode: normal;
   }
+
   [class*="avatar_"] {
     filter: unset;
   }
