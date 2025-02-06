@@ -7,6 +7,7 @@
  * @source https://github.com/Kurolibar/Discord-Addons
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
 /* @import url("https://kurolibar.github.io/Discord-Addons/Snippets/Navigation%20Bar%20Reduction.css"); */
 /* @import url("https://kurolibar.github.io/Discord-Addons/Snippets/Profile.css");
 @import url("https://kurolibar.github.io/Discord-Addons/Snippets/Sidebar.css");
@@ -29,6 +30,9 @@
   /* Spotify */
 
   /* Text */
+  --edited-message: " ✎ ";
+  --font-name: Consolas;
+  --font-size: 13px;
   /* Override Theme Chat Background */
   --channeltextarea-background: transparent;
   --scb-applauncher-padding: 0px;
@@ -43,6 +47,9 @@
   --msg-section-spacing: 12px;
 
   /* UI */
+  --user-name: "";
   --bg-opacity: 90%;
   --wallpaper: url("https://kurolibar.github.io/Discord-Addons/Resources/Strings.jpg");
+  --accentcolorV2: #aa1caa;
+
 } 

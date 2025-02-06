@@ -2,7 +2,7 @@
  * @name Chillax
  * @author Chillax Squad
  * @authorLink https://github.com/warrayquipsome/Chillax#Authors
- * @version 2.0.0
+ * @version 1.5.3
  * @invite DrfX6286kF
  * @description The theme where calm meets customization.
  * @source https://github.com/warrayquipsome/Chillax
@@ -32,13 +32,9 @@
 /* @import url("https://warrayquipsome.github.io/Chillax/Addons/FolderRedesign.css"); */
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 /* @import url("https://warrayquipsome.github.io/Chillax/Addons/FriendGrid.css"); */
-@import url("https://warrayquipsome.github.io/Chillax/Addons/ColoredLinks.css");
 
 /*additional addons*/ /*(remove the both * to use)*/
-/*use the below css if you are experiencing lag (remove the both * to use)*/
 /*@import url("https://warrayquipsome.github.io/Chillax/Addons/SimpleLessLag.css");*/
-/* To hide annoying elements such as nitro, shop, sticker picker etc tab (remove the both * to use)*/
-@import url("https://warrayquipsome.github.io/Chillax/Addons/HideAnnoyingElements.css");
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
 
 /*Chillax Roots*/
@@ -75,9 +71,9 @@
 
 /*roots*/ /*both dark and light*/
 :root {
-    --user-name: "King";
-    --edited-message: " EDITED ✎ ";
-    --font-name: Poppins;
+    --user-name: "";
+    --edited-message: " ✎ ";
+    --font-name: Consolas;
     --font-size: 13px;
     --group-chat-font: "Monoton"; /* change this to change the group chat's default font */
 
@@ -101,29 +97,29 @@
 
     /* For accent color to take full effect must need to change both */
     /* chillax colours rgb */
-    --accentcolor: 251, 84, 84;
+    --accentcolor: 170, 28, 170;
     /* chillax colours hex */
-    --accentcolorV2: #fb5454;
+    --accentcolorV2: #aa1caa;
 
 
     /* settings modal root */
     --themelightsettingsmodalbackground: rgb(223, 223, 223);
     --themedarksettingsmodalbackground: rgb(51, 49, 53);
-    --settingsmodalwidth: 960px;
+    --settingsmodalwidth: 1000px;
     --settingsmodalheight: 80vh;
 
     /* avatar only member list */
-    --memberlist-border-radius: 10px; /* can be in `px`, `rem`, `em` */
+    --memberlist-border-radius: 25px; /* can be in `px`, `rem`, `em` */
 
     /* placeholder texts/values */
     /* input fields */
-    --chillax-input-field: "Life is so much easier when you just take a moment to chill";
+    --chillax-input-field: "[ insert text here ]";
     /* input fields  when the channel is locked*/
-    --chillax-input-field-locked: "Unfortunately, you can't chill in this channel";
+    --chillax-input-field-locked: "[ locked ]";
     /* typing indicator: when a single person is typing */
-    --chillax-input-typing-indicator-one-person: "is smashing some buttons";
+    --chillax-input-typing-indicator-one-person: "";
     /* typing indicator: when more than one person is typing */
-    --chillax-input-typing-indicator-many-person: "are smashing some buttons";
+    --chillax-input-typing-indicator-many-person: "";
 
     /* scroller (by default transparent) */
     --chillax-scroller-color: transparent; /* change `transparent` to some other hex color to make it visible */
