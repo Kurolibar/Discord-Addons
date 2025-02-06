@@ -39,19 +39,20 @@
 /* Sidebar Image */
 [class*="sidebar_"]:not(:has([aria-label*="Direct Messages"])) {
   [aria-label="Channels"] {
-    background-image: var(--side-image),
-      linear-gradient(0deg, transparent 0%, black 0%), var(--side-image);
-    background-size: 90px, cover;
+    background-image: linear-gradient(to left, transparent 0%, black 35%),
+	  var(--side-image),
+      linear-gradient(transparent 0%, black 0%),
+	  var(--side-image);
+    background-size: cover, 89px;
     background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: 100px;
-    background-blend-mode: luminosity, multiply;
+    background-position: center, 17vmin 10vmin;
+	background-attachment: local, fixed;
+	background-blend-mode: luminosity;
+	image-rendering: optimizeSpeed;
   }
   [aria-label="Channels"]:hover {
-    image-rendering: optimizeQuality;
     background-blend-mode: normal;
   }
-
   [class*="avatar_"] {
     filter: unset;
   }
