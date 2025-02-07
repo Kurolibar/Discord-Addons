@@ -109,7 +109,7 @@
     /* settings modal root */
     --themelightsettingsmodalbackground: rgb(223, 223, 223);
     --themedarksettingsmodalbackground: rgb(51, 49, 53);
-    --settingsmodalwidth: 1000px;
+    --settingsmodalwidth: 960px;
     --settingsmodalheight: 80vh;
 
     /* avatar only member list */
