@@ -38,7 +38,7 @@
 }
 
 /* Sidebar Image */
-[class*="sidebar_"]:not(:has([aria-label*="Direct Messages"])) {
+/* [class*="sidebar_"]:not(:has([aria-label*="Direct Messages"])) {
   [aria-label="Channels"] {
     background-image: linear-gradient(to left, transparent 0%, black 35%),
       var(--side-image), linear-gradient(transparent 0%, black 0%),
@@ -57,7 +57,7 @@
   [class*="avatar_"] {
     filter: unset;
   }
-}
+} */
 /* VC Hang Status */
 [class*="iconGroup"]:has([class*="hangStatusIcon"], [class*="gameIcon"]) {
   display: flex;
